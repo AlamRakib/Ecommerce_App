@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11FFFFFF"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        >
+
+
+        <ImageView
+            android:id="@+id/imgcart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/baseline_shopping_cart_24">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+
+        >
+
+    </ProgressBar>
+
+
+    <GridView
+        android:id="@+id/gridViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RelativeLayoutId"
+        android:numColumns="2"
+        tools:listitem="@layout/sample_view"
+        >
+
+    </GridView>
+
+
+
+
+</RelativeLayout>

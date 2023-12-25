@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eachShoeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginEnd="8dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/layItemId"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/stroke"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:soundEffectsEnabled="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageViewId"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_image_24">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/titleTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewId"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="samsung universe 9"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/discountTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTextViewId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:text="discount"
+                android:textColor="#FF5722"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/priceTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="1249$"
+                android:textColor="#090909"
+                android:textSize="15sp"
+                >
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/eachShoeAddToCartBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/baseline_shopping_cart_24" />
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

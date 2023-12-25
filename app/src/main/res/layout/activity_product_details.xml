@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/detailActivityShoeIV"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/baseline_image_24"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/detailActivityShoeNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/detailActivityShoeBrandNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetuer  adipiscing elit. Aenean commodo ligula "
+        android:textSize="16sp"
+         />
+
+    <Button
+        android:id="@+id/detailActivityAddToCartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@drawable/round_shape"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+         />
+
+    <TextView
+        android:id="@+id/detailActivityShoePriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="325dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/detailActivityShoeBrandNameTv"
+        app:layout_constraintTop_toTopOf="@+id/detailActivityShoeBrandNameTv" />
+
+    <EditText
+        android:id="@+id/DiscountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:visibility="visible"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/priceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:visibility="visible"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/NameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:visibility="visible"
+        >
+
+    </EditText>
+
+
+
+
+
+</RelativeLayout>
